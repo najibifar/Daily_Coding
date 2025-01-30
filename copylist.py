@@ -33,3 +33,7 @@ list2 = [1, 2, 3]
 
 list1.extend(list2)
 print(list1)
+
+fruits = ['apple', 'banana', 'cherry']
+newlist = ['apple' for x in fruits]
+print(newlist)
