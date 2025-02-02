@@ -19,6 +19,8 @@ print(yellow)
 print(red)
 
 
+
+
 fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
 
 (green, *tropic, red) = fruits
