@@ -10,3 +10,6 @@ a, b, c, d, e = s
 b = d = '*'
 s = (a, b, c, d, e)
 print(s)
+
+x = "Python" 
+print(x[2:5])
