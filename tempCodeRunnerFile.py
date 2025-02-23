@@ -1,1 +1,2 @@
-print("welcome python")
+queue = {'name', 'age', 'DOB'} 
+print(queue) 
