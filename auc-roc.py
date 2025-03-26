@@ -34,3 +34,18 @@ print('Confusion matrix')
 print(cf_mat)
 print(f'class 0 accuracy: {cf_mat[0][0]/n_0}')
 print(f'class 1 accuracy: {cf_mat[1][1]/n_1}')
+
+
+import matplotlib.pyplot as plt
+
+def plot_roc_curve(true_y, y_prob):
+    """
+    plots the roc curve based of the probabilities
+    """
+
+    fpr, tpr, thresholds = roc_curve(true_y, y_prob)
+    plt.plot(fpr, tpr)
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+plot_roc_curve(y, y_proba_2)
+print(f'model 2 AUC score: {roc_auc_score(y, y_proba_2)}')
