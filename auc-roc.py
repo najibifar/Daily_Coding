@@ -49,3 +49,7 @@ def plot_roc_curve(true_y, y_prob):
     plt.ylabel('True Positive Rate')
 plot_roc_curve(y, y_proba_2)
 print(f'model 2 AUC score: {roc_auc_score(y, y_proba_2)}')
+
+
+fpr, tpr, thresholds = roc_curve(y, y_prob_2)
+plt.plot(fpr, tpr)
