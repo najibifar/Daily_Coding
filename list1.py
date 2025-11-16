@@ -16,5 +16,7 @@ thislist = ["apple", "banana", "cherry"]
 thislist.pop(2)
 print(thislist)
 
-
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+thislist.remove("apple")
+print(thislist)
 
